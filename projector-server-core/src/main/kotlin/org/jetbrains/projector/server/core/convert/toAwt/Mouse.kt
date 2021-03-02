@@ -39,7 +39,7 @@ private const val DEFAULT_SCROLL_AMOUNT = 1
 // todo: 100 is just a random but reasonable number;
 //       need to calculate this number from the context,
 //       maybe use the client's scaling ratio
-private const val PIXEL_PER_UNIT = 100
+private const val PIXEL_PER_UNIT = (System.getenv("PROJECTOR_MOUSE_PIXEL_PER_UNIT") ?: "").toLongOrNull() ?: 100
 
 // todo: 3 is a wild guess (scaling factor of mobile devices), need to get this number from the context
 private const val TOUCH_PIXEL_PER_UNIT = 3 * PIXEL_PER_UNIT
