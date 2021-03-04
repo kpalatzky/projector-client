@@ -139,6 +139,7 @@ actual object ParamsProvider {
       BLOCK_CLOSING = searchParams.get("blockClosing")?.toBoolean() ?: DEFAULT_BLOCK_CLOSING
       LAYOUT_TYPE = when (searchParams.get("layout")) {
         "frAzerty" -> LayoutType.FR_AZERTY
+        "de", "deQwertz" -> LayoutType.DE_QWERTZ
         else -> LayoutType.JS_DEFAULT
       }
     }
@@ -159,5 +160,6 @@ actual object ParamsProvider {
   enum class LayoutType {
     JS_DEFAULT,
     FR_AZERTY,
+    DE_QWERTZ
   }
 }

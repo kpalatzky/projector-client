@@ -51,6 +51,7 @@ class InputController(
     get() = when (ParamsProvider.LAYOUT_TYPE) {
       ParamsProvider.LayoutType.JS_DEFAULT -> emptyMap()
       ParamsProvider.LayoutType.FR_AZERTY -> frAzertyCodeMap
+      ParamsProvider.LayoutType.DE_QWERTZ -> deQwertzCodeMap
     }
 
   val specialKeysState = SpecialKeysState()
@@ -580,6 +581,38 @@ class InputController(
       "Comma" to "Semicolon",
       "Period" to "Colon",
       "Slash" to "VK_EXCLAMATION_MARK",
+    )
+
+
+    private val deQwertzCodeMap = mapOf(
+      // number row:
+      "Backquote" to "VK_UNDEFINED",  // '²'
+      "Digit1" to "VK_AMPERSAND",  // '!'
+      "Digit2" to "VK_QUOTEDBL",  // '"'
+      "Digit3" to "VK_UNDEFINED",  // '§'
+      "Digit4" to "VK_DOLLAR",  // '$'
+      "Digit5" to "VK_UNDEFINED",  // '%'
+      "Digit6" to "VK_AMPERSAND",  // '&'
+      "Digit7" to "VK_SLASH",  // '/'
+      "Digit8" to "VK_LEFT_PARENTHESIS",  // '('
+      "Digit9" to "VK_RIGHT_PARENTHESIS",  // ')'
+      "Digit0" to "VK_EQUALS",  // '='
+      "Minus" to "VK_UNDEFINED",  // '?'
+
+      // 1st letter row
+      "KeyZ" to "KeyY", // 'z'
+      "KeyY" to "KeyZ", // 'y'
+
+      "BracketLeft" to "VK_UNDEFINED",  // '^'
+      "BracketRight" to "VK_ASTERISK",  // '$'
+      "Backslash" to "VK_UNDEFINED",  // '*'
+
+      // 2nd letter row
+      "Semicolon" to "VK_UNDEFINED", // 'ö'
+      "Quote" to "VK_UNDEFINED",  // 'ä'
+
+      // 3rd letter row
+      "Slash" to "VK_MINUS", // '-'
     )
   }
 }
