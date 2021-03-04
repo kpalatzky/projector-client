@@ -601,11 +601,10 @@ class InputController(
 
       // 1st letter row
       "KeyZ" to "KeyY", // 'z'
-      "KeyY" to "KeyZ", // 'y'
 
       "BracketLeft" to "VK_UNDEFINED",  // '^'
-      "BracketRight" to "VK_ASTERISK",  // '$'
-      "Backslash" to "VK_UNDEFINED",  // '*'
+      "BracketRight" to "VK_PLUS",  // 'Ü'
+      "Backslash" to "VK_ASTERISK",  // '*'
 
       // 2nd letter row
       "Semicolon" to "VK_UNDEFINED", // 'ö'
@@ -613,6 +612,7 @@ class InputController(
 
       // 3rd letter row
       "Slash" to "VK_MINUS", // '-'
+      "KeyY" to "KeyZ", // 'y'
     )
   }
 }
