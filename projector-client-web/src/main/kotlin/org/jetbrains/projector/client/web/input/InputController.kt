@@ -586,18 +586,18 @@ class InputController(
 
     private val deQwertzCodeMap = mapOf(
       // number row:
-      "Backquote" to "VK_UNDEFINED",  // '²'
-      "Digit1" to "VK_AMPERSAND",  // '!'
-      "Digit2" to "VK_QUOTEDBL",  // '"'
-      "Digit3" to "VK_UNDEFINED",  // '§'
-      "Digit4" to "VK_DOLLAR",  // '$'
-      "Digit5" to "VK_UNDEFINED",  // '%'
-      "Digit6" to "VK_AMPERSAND",  // '&'
-      "Digit7" to "VK_SLASH",  // '/'
-      "Digit8" to "VK_LEFT_PARENTHESIS",  // '('
-      "Digit9" to "VK_RIGHT_PARENTHESIS",  // ')'
-      "Digit0" to "VK_EQUALS",  // '='
-      "Minus" to "VK_UNDEFINED",  // '?'
+//       "Backquote" to "VK_UNDEFINED",  // '²'
+//       "Digit1" to "VK_AMPERSAND",  // '!'
+//       "Digit2" to "VK_QUOTEDBL",  // '"'
+//       "Digit3" to "VK_UNDEFINED",  // '§'
+//       "Digit4" to "VK_DOLLAR",  // '$'
+//       "Digit5" to "VK_UNDEFINED",  // '%'
+//       "Digit6" to "VK_AMPERSAND",  // '&'
+      "Digit7" to "Slash",  // '/'
+//       "Digit8" to "VK_LEFT_PARENTHESIS",  // '('
+//       "Digit9" to "VK_RIGHT_PARENTHESIS",  // ')'
+//       "Digit0" to "VK_EQUALS",  // '='
+//       "Minus" to "VK_UNDEFINED",  // '?'
 
       // 1st letter row
       "KeyZ" to "KeyY", // 'z'
@@ -611,7 +611,7 @@ class InputController(
       "Quote" to "VK_UNDEFINED",  // 'ä'
 
       // 3rd letter row
-      "Slash" to "VK_MINUS", // '-'
+      "Slash" to "Minus", // '-'
       "KeyY" to "KeyZ", // 'y'
     )
   }
